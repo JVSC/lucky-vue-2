@@ -1,10 +1,14 @@
 {
   "name": "lucky-vue-2",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
+  "main": "./dist/lucky-vue-2.common.js",
+  "files": [
+    "dist/*"
+  ],
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
+    "build": "vue-cli-service build --target lib --name lucky-vue-2 ./src/plugin.js",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
