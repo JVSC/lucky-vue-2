@@ -1,11 +1,11 @@
 /**
- * @param {string} id
  * @param {object} config
+ * @param {object} config.siteId
  * @param {boolean} config.isProd
  */
-function init(id, config) {
+function init(config) {
   if (!config.isProd) return;
-  if (!id) return;
+  if (!config.siteId) return;
   let script = document.createElement('script');
   script.async = true;
   script.defer = true;
@@ -38,7 +38,7 @@ function track(event, options) {
 const LuckyPlugin = {
   // eslint-disable-next-line no-unused-vars
   install(Vue, options) {
-    init();
+    init(options);
     Vue.prototype.$lo = {
       identify,
       track,
