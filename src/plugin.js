@@ -9,7 +9,7 @@ function init(config) {
   let script = document.createElement('script');
   script.async = true;
   script.defer = true;
-  script.src = `https://tools.luckyorange.com/core/lo.js?site-id=${id}`;
+  script.src = `https://tools.luckyorange.com/core/lo.js?site-id=${config.siteId}`;
   document.head.appendChild(script);
   window.LOQ = window.LOQ || [];
   window.LOQ.push([
