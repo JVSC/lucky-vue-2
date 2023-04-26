@@ -1,6 +1,6 @@
 {
   "name": "lucky-vue-2",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": false,
   "main": "./dist/lucky-vue-2.common.js",
   "files": [
@@ -39,6 +39,13 @@
     },
     "rules": {}
   },
+  "keywords": [
+    "lucky orange",
+    "lucky",
+    "orange",
+    "vue",
+    "vue 2"
+  ],
   "browserslist": [
     "> 1%",
     "last 2 versions",
